@@ -68,18 +68,17 @@
 .grid {
   display: flex;
   align-items: center;
-  justify-content: center;
+  
   flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
   margin: 1rem;
   padding: 1.5rem;
   text-align: left;
-  color: inherit;
+  color: grey;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #251616;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
@@ -88,7 +87,7 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
+  color: #8340bb;
   border-color: #0070f3;
 }
 
