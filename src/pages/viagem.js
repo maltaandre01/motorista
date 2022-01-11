@@ -3,31 +3,29 @@ import { AiOutlineCheckCircle } from 'react-icons/ai'
 
 export default function Viagem () {
     return (
-    <Container>
-        <h1>faça o checklist da sua viagem </h1>
-        <ListContainer>
-            <Card>
-                <h2>Trocar o óleo</h2>
-                <AiOutlineCheckCircle size={24} />
-            </Card>
-            <Card>
-                <h2>Verificar o nivel de água</h2>
-                <AiOutlineCheckCircle size={24} />
-            </Card>
-            <Card>
-                <h2>Conferir os pneus</h2>
-                <AiOutlineCheckCircle size={24} />
-            </Card>
-        </ListContainer>
-        <p>Isso e apenas uma recomendação, consulte seu mecânico antes de viajar.</p>
-    </Container>
-    
-    
+        <Container>
+            <h1>faça o checklist da sua viagem </h1>
+            <ListContainer>
+                <Card>
+                    <h2>Trocar o óleo</h2>
+                    <AiOutlineCheckCircle size={24} />
+                </Card>
+                <Card>
+                    <h2>Verificar o nivel de água</h2>
+                    <AiOutlineCheckCircle size={24} />
+                </Card>
+                <Card>
+                    <h2>Conferir os pneus</h2>
+                    <AiOutlineCheckCircle size={24} />
+                </Card>
+            </ListContainer>
+            <p>Isso e apenas uma recomendação, consulte seu mecânico antes de viajar.</p>
+        </Container>
     )
 }
 
 const Container = styled.div`
-    background-color: red;
+    background-color: #1b6df2;
     height: 100vh;
     width: 100vw;
     color: white;
@@ -48,7 +46,7 @@ const Container = styled.div`
 
 const ListContainer = styled.div`
     background-color: white;
-    color: red;
+    color: #1b6df2;
     padding: 24px;
     width: 100%;
     max-width: 600px;
@@ -58,7 +56,7 @@ const ListContainer = styled.div`
     }
     `
 const Card = styled.div`
-    border: 1px dashed red;
+    border: 1px dashed #1b6df2;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -69,7 +67,7 @@ const Card = styled.div`
     
     &:hover {
         cursor: pointer;
-        color: pink;
+        color: #a0bce8;
         transition: 140ms ease;
     }
 `   
