@@ -3,26 +3,24 @@ import { AiOutlineCheckCircle } from 'react-icons/ai'
 
 export default function Viagem () {
     return (
-    <Container>
-        <h1>faça o checklist da sua viagem </h1>
-        <ListContainer>
-            <Card>
-                <h2>Trocar o óleo</h2>
-                <AiOutlineCheckCircle size={24} />
-            </Card>
-            <Card>
-                <h2>Verificar o nivel de água</h2>
-                <AiOutlineCheckCircle size={24} />
-            </Card>
-            <Card>
-                <h2>Conferir os pneus</h2>
-                <AiOutlineCheckCircle size={24} />
-            </Card>
-        </ListContainer>
-        <p>Isso e apenas uma recomendação, consulte seu mecânico antes de viajar.</p>
-    </Container>
-    
-    
+        <Container>
+            <h1>faça o checklist da sua viagem </h1>
+            <ListContainer>
+                <Card>
+                    <h2>Trocar o óleo</h2>
+                    <AiOutlineCheckCircle size={24} />
+                </Card>
+                <Card>
+                    <h2>Verificar o nivel de água</h2>
+                    <AiOutlineCheckCircle size={24} />
+                </Card>
+                <Card>
+                    <h2>Conferir os pneus</h2>
+                    <AiOutlineCheckCircle size={24} />
+                </Card>
+            </ListContainer>
+            <p>Isso e apenas uma recomendação, consulte seu mecânico antes de viajar.</p>
+        </Container>
     )
 }
 
