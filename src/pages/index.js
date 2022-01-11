@@ -6,7 +6,7 @@ export default function Home (){
       <p> Temos opções para voçe se preparar!</p>
       <CardContainer>
         <Card href='/viagem'>
-          <h2>checklist</h2>
+          <h2>faça o checklist</h2>
         </Card>
         <Card>
           <h2>encontre um mecânico</h2>
@@ -21,7 +21,7 @@ const Container = styled.div`
   background-color: #fbfbfb;
   height: 100vh;
   width: 100vw;
-  color: blue;
+  color: #1b6df2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,13 +45,13 @@ const Container = styled.div`
 const Card = styled.a`
   height: 120px;
   width: 220px;
-  border: 2px solid blue;
+  border: 2px solid #1b6df2;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:center;
-  color: blue;
+  color: #1b6df2;
   text-transform: uppercase;
   transition: 140ms ease;
   padding: 0 12px;
@@ -60,7 +60,7 @@ const Card = styled.a`
   &:hover {
     cursor: pointer;
     color: white;
-    background-color: blue;
+    background-color: #1b6df2;
     transition: 140ms ease;
   }
 `
