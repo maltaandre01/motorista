@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styled from 'styled-components'
 export default function Home (){
   return(
@@ -9,10 +10,10 @@ export default function Home (){
           <h2>faça o checklist</h2>
         </Card>
         <Card>
-          <h2>encontre um mecânico</h2>
+          <h2>planeje sua rota</h2>
         </Card>
       </CardContainer>
-      
+      <p className='aux-text'>Para mais informações, <a className='link'>encontre aqui</a> o  mecânico mais perto de você.</p>
     </Container>
   )
 }
@@ -39,7 +40,26 @@ const Container = styled.div`
   p {
     color: #1c1c1c;
     font-size:24px;
+  }  
+  
+  .aux-text {
+    font-size: 14px;
+    color: grey;
+    margin-top: 24px;
   }
+  
+  .link {
+    color: #1b6df2;
+    transition: 140ms ease;
+    
+    &:hover {
+      cursor: pointer;
+      opacity: 0.5;
+      transition: 140ms ease;
+      
+    } 
+  }
+
   
 `
 const Card = styled.a`
