@@ -1,6 +1,7 @@
+import { useState } from 'react'
 import { Container, Card, ListContainer } from './styles'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
-import { useState } from 'react'
+import { list } from '../../../constants/checklist'
 
 
 export default function Viagem() {
@@ -9,8 +10,10 @@ export default function Viagem() {
 
     function toggleCard(id) {
         if (checklist.includes(id)) {
+            // REMOVENDO ITEM DA LISTA
             setChecklist(checklist.filter(el => el !== id))
         } else {
+            // ADICIONANDO ITEM NA LISTA
             setChecklist(checklist.concat(id))
         }
     }
@@ -19,18 +22,14 @@ export default function Viagem() {
         <Container>
             <h1>faça o checklist da sua viagem.</h1>
             <ListContainer>
-                <Card isActive={checklist.includes(0)} onClick={() => toggleCard(0)}>
-                    <h2>Trocar o óleo</h2>
-                    <AiOutlineCheckCircle size={24} />
-                </Card>
-                <Card isActive={checklist.includes(1)} onClick={() => toggleCard(1)}>
-                    <h2>Verificar o nivel de água</h2>
-                    <AiOutlineCheckCircle size={24} />
-                </Card>
-                <Card isActive={checklist.includes(2)} onClick={() => toggleCard(2)}>
-                    <h2>Conferir os pneus</h2>
-                    <AiOutlineCheckCircle size={24} />
-                </Card>
+                {
+                    list.map(item => (
+                        <Card key={item.id} isActive={checklist.includes(item.id)} onClick={() => toggleCard(item.id)}>
+                            <h2>{item.value}</h2>
+                            <AiOutlineCheckCircle size={24} />
+                        </Card>
+                    ))
+                }
             </ListContainer>
             <p>Isso e apenas uma recomendação, consulte seu mecânico antes de viajar.</p>
         </Container>
