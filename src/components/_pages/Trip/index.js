@@ -24,7 +24,7 @@ export default function Viagem() {
             <ListContainer>
                 {
                     list.map(item => (
-                        <Card isActive={checklist.includes(item.id)} onClick={() => toggleCard(item.id)}>
+                        <Card key={item.id} isActive={checklist.includes(item.id)} onClick={() => toggleCard(item.id)}>
                             <h2>{item.value}</h2>
                             <AiOutlineCheckCircle size={24} />
                         </Card>
